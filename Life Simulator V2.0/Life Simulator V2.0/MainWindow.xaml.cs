@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace Life_Simulator_V2._0
 {
-    
+    //teszt
     public class Player
     {
         public string name;
