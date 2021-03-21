@@ -1,0 +1,15 @@
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\bin\Debug\Life Simulator V2.0.exe.config
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\bin\Debug\Life Simulator V2.0.exe
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\bin\Debug\Life Simulator V2.0.pdb
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.csprojAssemblyReference.cache
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\MainWindow.g.cs
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\App.g.cs
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0_MarkupCompile.cache
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0_MarkupCompile.lref
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\MainWindow.baml
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.g.resources
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life_Simulator_V2._0.Properties.Resources.resources
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.csproj.GenerateResource.cache
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.csproj.CoreCompileInputs.cache
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.exe
+C:\Users\nones\source\repos\Life Simulator V2.0\Life Simulator V2.0\obj\Debug\Life Simulator V2.0.pdb
