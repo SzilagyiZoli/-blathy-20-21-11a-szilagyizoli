@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 
 namespace Life_Simulator_V2._0
 {
-    //teszt
     public class Player
     {
         public string name;
@@ -28,6 +27,7 @@ namespace Life_Simulator_V2._0
         public int credit_card_pin =0000;
         public int bank_balance =0;
         public int hungry = 0;
+        public string workplpace = "Hajléktalan";
 
 
         public Player()
@@ -44,6 +44,11 @@ namespace Life_Simulator_V2._0
         {
             switch (work_place)
             {
+                case "Hajléktalan":
+                    this.healt =this.healt- 1*hours ;
+                    this.bank_balance = this.bank_balance+10*hours;
+                    
+                    break;
                 case "Takarító":
                     break;
                 case "Futár":
@@ -64,6 +69,7 @@ namespace Life_Simulator_V2._0
         public void sleep()// dátumot át kell állítani
         {
             this.healt = 100;
+            
 
 
         }
@@ -97,6 +103,8 @@ namespace Life_Simulator_V2._0
    
     public partial class MainWindow : Window
     {
+        public DateTime date = new DateTime(2000, 1, 1);
+        public Player player1 = new Player();
         public MainWindow()
         {
             InitializeComponent();
@@ -107,30 +115,58 @@ namespace Life_Simulator_V2._0
         {
             if (!load)
             {
-                Player player = new Player();
-                data_write_out(player);
+                                
+                data_write_out(player1);
             }
             else
             {
                 //KÜLSŐ FÁJBÓL BETÖLTÉS
             }
         }
+        private string dateToString()
+        {
+            string year = date.Year+".";
+            string month;
+            string day;
+            if (date.Month<10)
+            {
+                month = "0"+date.Month + ".";
+            }
+            else
+            {
+                month = date.Month+".";
+            }if (date.Day<10)
+            {
+                day = "0"+date.Day + ".";
+            }
+            else
+            {
+                day = date.Day+".";
+            }
+            return year + " " + month + " " + day;
+        }
         private void data_write_out(Player player)
         {
-            LB_age.Content = player.age.ToString();
-            LB_balance.Content = player.balance.ToString();
-            LB_bank_balance.Content = player.bank_balance.ToString();
-            LB_house.Content = player.current_house;
-            LB_hungry.Content = player.hungry.ToString();
+            LB_age.Content ="Kor: "+ player.age.ToString();
+            LB_balance.Content ="Készpénzed: "+ player.balance.ToString();
+            LB_bank_balance.Content ="Banki egyenleg:" +player.bank_balance.ToString();
+            LB_house.Content ="Házad: "+ player.current_house;
+            LB_hungry.Content ="Éhség: " + player.hungry.ToString();
+            LB_date.Content = "Dátum: " + dateToString() ;
+            LB_level.Content = player.lvl;
+            LB_nextlevel.Content = player.lvl+1;
+            PG_healt.Value = player.healt;
         }
 
         private void BTN_work_Click(object sender, RoutedEventArgs e)
         {
-
+            player1.Work(player1.workplpace, 1);
+            data_write_out(player1);
         }
         private void BTN_sleep_Click(object sender, RoutedEventArgs e)
         {
-
+            player1.sleep();
+            data_write_out(player1);
         }
 
         private void BTN_eat_Click(object sender, RoutedEventArgs e)
