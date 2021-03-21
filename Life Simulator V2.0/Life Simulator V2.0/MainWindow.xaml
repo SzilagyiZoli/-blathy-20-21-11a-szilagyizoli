@@ -1,0 +1,95 @@
+﻿<Window x:Class="Life_Simulator_V2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Life_Simulator_V2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button x:Name="BTN_work" Click="BTN_work_Click" Grid.Row="0" Grid.Column="0">Dolgozni</Button>
+            <Button x:Name="BTN_sleep" Click="BTN_sleep_Click" Grid.Row="0" Grid.Column="1">Aludni</Button>
+            <Button x:Name="BTN_eat" Click="BTN_eat_Click" Grid.Row="0" Grid.Column="2">Enni</Button>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button x:Name="BTN_bank" Click="BTN_bank_Click" Grid.Row="0" Grid.Column="0">Bank</Button>
+            <Button x:Name="BTN_hospital" Click="BTN_hospital_Click" Grid.Row="0" Grid.Column="1">Korház</Button>
+            <Button x:Name="BTN_learn" Click="BTN_learn_Click" Grid.Row="0" Grid.Column="2">Tanulni</Button>
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="9*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Élet</Label>
+                <ProgressBar Grid.Column="1" Value="100" ></ProgressBar>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" ></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="7*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Szint</Label>
+                <Label Grid.Column="1">1</Label>
+                <ProgressBar Grid.Column="2" ></ProgressBar>
+                <Label Grid.Column="3">2</Label>
+
+            </Grid>
+
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="LB_balance" Grid.Row="0" Grid.Column="0">Készpénzed:</Label>
+            <Label x:Name="LB_age" Grid.Row="0" Grid.Column="1">Kor:</Label>
+            <Label x:Name="LB_hungry" Grid.Row="0" Grid.Column="2">Éhség:</Label>
+            <Label x:Name="LB_bank_balance" Grid.Row="1" Grid.Column="0">Banki egyenleg:</Label>
+            <Label x:Name="LB_house" Grid.Row="1" Grid.Column="1">Házad:</Label>
+            <Label x:Name="LB_date" Grid.Row="1" Grid.Column="3">Dátum:</Label>
+        </Grid>
+    </Grid>
+</Window>
